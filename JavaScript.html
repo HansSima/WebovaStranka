@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Změna textu</title>
+</head>
+<body>
+    
+    <div>
+        <p id="text">Toto je původní text.</p>
+        <button onclick="zmenText()">Změnit text</button>
+    </div>
+
+    <div>
+        <p id="text2" style="color: black;">Klikni na tlačítko pro změnu barvy textu.</p>
+        <button onclick="zmenBarvu()">Změnit barvu</button>
+    </div>
+
+    <div>
+        <p id="text3">Tento text lze skrýt a znovu zobrazit.</p>
+        <button onclick="toggleText()">Skrýt/Zobrazit</button>
+    </div>
+
+
+
+    <script>
+
+        let vek = 25; // proměnná, kterou lze měnit
+        const name = "Jan";  // konstantní proměnná
+        var mesto = "Ostrava"; // starší způsob
+
+        function zmenText() {
+            document.getElementById("text").textContent = "Text byl změněn!";
+        }
+
+        function zmenBarvu() {
+            document.getElementById("text2").style.color = "blue";
+        }
+        
+        function toggleText() {
+            const text = document.getElementById("text3");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* Kontejner pro Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tři sloupce stejné šířky */
+    grid-gap: 20px; /* Mezera mezi položkami */
+    width: 80%;
+    height: 60%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Jednotlivé položky */
+.grid-item {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 150px;
+    max-height: 150px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Hover efekt */
+.grid-item:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
